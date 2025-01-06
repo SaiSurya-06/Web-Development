@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+    <header>
+        <center>
+            <h1 style="color: blue; background-color: aqua; width: 100px;">HTML</h1>
+        </center>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>HTML - INTRODUCTION</h2>
+        <ul>
+            <li>HTML Stands for Hyper Text Markup Language</li>
+            <li>HTML is a document that contains text</li>
+            <li>Web browsers read and display document that contain HTML</li>
+            <li>&lt; &gt; - Angle brackets contain tag</li>
+            <li> &lt;body&gt; Something inside here &lt;/body&gt; - Markup Element</li>
+        </ul>
+        </section>
+        <section id="headings">
+            <h2>HTML - HEADINGS</h2>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+        </section>
+        <section id="paragraphs">
+            <h2>HTML - PARAGRAPHS</h2>
+            <p>This is a paragraph</p>
+            <p>This is another paragraph</p>
+        </section>
+        <section id="LineBreaksSpacingComments">
+            <h2>HTML - Line Breaks, Spacing, Comments</h2>
+            <p>This is a paragraph<br>with a line break using &lt;br&gt;</p>
+            <p>This is a paragraph with &nbsp; non-breaking space using & nbsp</p>
+            <p>&lt;!--This is a comment--&gt;</p>
+        </section>
+        <section id="lists">
+            <h2>HTML - LISTS</h2>
+            <h3>Unordered List</h3>
+            - Use &lt;ul&gt; tag to create an unordered list<br>
+            - Use &lt;li&gt; tag to create a list item<br>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <h3>Ordered List</h3>
+            - Use &lt;ol&gt; tag to create an ordered list<br>
+            - Use &lt;li&gt; tag to create a list item<br>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+        </section>
+        <section id="tables">
+            <h2>HTML - TABLES</h2>
+            - Use &lt;table&gt; tag to create a table<br>
+            - Use &lt;tr&gt; tag to create a table row<br>
+            - Use &lt;th&gt; tag to create a table header<br>
+            - Use &lt;td&gt; tag to create a table data<br>
+            <br>
+            <table border="1">
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                </tr>
+                <tr>
+                    <td>Row 1, Cell 1</td>
+                    <td>Row 1, Cell 2</td>
+                    <td>Row 1, Cell 3</td>
+                </tr>
+                <tr>
+                    <td>Row 2, Cell 1</td>
+                    <td>Row 2, Cell 2</td>
+                    <td>Row 2, Cell 3</td>
+                </tr>
+            </table>
+        </section>
+        <section id="links">
+            <h2>HTML - LINKS</h2>
+            <h3>Creating a web link</h3>
+            - Use &lt;a&gt; tag to create a hyperlink<br>
+            - Use href attribute to specify the URL of the page the link goes to<br>
+            Ex: &lt;a href= "https://www.google.com"&gt; <a href="https://www.google.com">Google</a>
+            <h3> Creating links within same web</h3>
+            - Use &lt;a&gt; tag to create a hyperlink<br>
+            - Use href attribute to specify the Section of the page the link goes to<br>
+            Ex: &lt;a href= "#introduction"&gt; <a href="#introduction">Introduction</a>
+        </section>
+        <section id="image">
+            <h2>HTML - IMAGE</h2>
+            - Use &lt;img&gt; tag to display an image<br>
+            - Use src attribute to specify the URL of the image<br>
+            - Use alt attribute to specify an alternate text for the image<br>
+            Ex: &lt;img src="image.jpg" alt="Image"&gt;
+            <section id="resizing">
+                <h3>Resizing an image</h3>
+                - Use width attribute to specify the width of the image<br>
+                - Use height attribute to specify the height of the image<br>
+                Ex: &lt;img src="image.jpg" alt="Image" width="100" height="100"&gt;
+            </section>
+        </section>
+        <section id="nestedElement">
+            <h2>HTML - NESTED ELEMENTS</h2>
+            - Use &lt;div&gt; tag to group elements
+            <br>
+            - Use &lt;span&gt; tag to group inline elements
+            <br>
+            Ex: &lt;div&gt; &lt;span&gt;This is a span&lt;/span&gt; &lt;/div&gt;
+        </section>
+        <section id="forms">
+            <h2>HTML - FORMS</h2>
+            <article>
+                - Use &lt;form&gt; tag to create a form
+                <br>
+                - Use action attribute to specify the URL of the page the form is submitted to
+                <br>
+                - Use method attribute to specify the HTTP method used when submitting the form
+                <br>
+                Ex: &lt;form action="submit.php" method="post"&gt; &lt;/form&gt; 
+                <br>
+                - Use &lt;input&gt; tag to create an input field
+                <br>
+                - Use type attribute to specify the type of input field
+                <br>
+                - Use value attribute to specify the value of input field
+                <br>
+                Ex: &lt;form&gt; &lt;input type="text" value="Name"&gt; &lt;/form&gt; 
+                <br>
+                - Use &lt;lable&gt; tag to create a label for an input field
+                <br>
+                - Use name attribute to specify the name of the input field
+                <br>
+                Ex: &lt;form&gt; &lt;lable for="name"&gt;Name&lt;/lable&gt; &lt;input type="text" name="name"&gt; &lt;/form&gt; 
+                <br>
+                - Use &lt;input&gt; tag to create a submit button
+                <br>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" value="Name">
+                    <input type="submit" value="Submit">
+                </form>
+                - Use &lt;textarea&gt; tag to create a text area
+                <br>
+                - Use rows attribute to specify the number of rows in a text area
+                <br>
+                - Use cols attribute to specify the number of columns in a text area
+                <br>
+                Ex: &lt;form&gt; &lt;textarea rows="4" cols="50"&gt; &lt;/textarea&gt; &lt;/form&gt;
+                <br>
+                <textarea rows="4" cols="50"></textarea>
+                <br>
+                <br>
+                - Use radio button to select one option from many
+                <br>
+                - Use &lt;input&gt; tag to create a radio button
+                <br>
+                - Use type attribute to specify the type of radio button
+                <br>
+                - Use name attribute to specify the name of radio button
+                <br>
+                - Use value attribute to specify the value of radio button
+                <br>
+                Ex: &lt;form&gt; &lt;input type="radio" name= "" value=""&gt;&lt;/form&gt;
+                <br>
+                <form>
+                    <input type="radio" name="true/false" value="True">True
+                    <br>
+                    <input type="radio" name="true/false" value="False">False
+                </form>
+                <br>
+                - Use checkbox to select multiple options
+                <br>
+                - Use &lt;input&gt; tag to create a checkbox
+                <br>
+                - Use type attribute to specify the type of checkbox
+                <br>
+                - Use name attribute to specify the name of checkbox
+                <br>
+                - Use value attribute to specify the value of checkbox
+                <br>
+                Ex: &lt;form&gt; &lt;input type="checkbox" name="vehicle1" value="Bike"&gt; &lt;/form&gt;
+                <br>
+                <form>
+                    <input type="checkbox" name="vehicle1" value="Bike">Bike
+                    <br>
+                    <input type="checkbox" name="vehicle2" value="Car">Car
+                </form>
+                <br>
+                - Use number input box to enter a number
+                <br>
+                - Use &lt;input&gt; tag to create a number input box
+                <br>
+                - Use type attribute to specify the type of number input box
+                <br>
+                - Use name attribute to specify the name of number input box
+                <br>
+                Ex: &lt;form&gt; &lt;input type="number" name="quantity"&gt; &lt;/form&gt;
+                <br>
+                <form>
+                    <input type="number" name="quantity">
+                </form>
+                <br>
+                - Use drop-down list to select one option from many
+                <br>
+                - Use &lt;select&gt; tag to create a drop-down list
+                <br>
+                - Use &lt;option&gt; tag to create an option in a drop-down list
+                <br>
+                - Use value attribute to specify the value of an option
+                <br>
+                Ex: &lt;form&gt; &lt;select&gt; &lt;option value="">&lt;/option&gt; &lt;option value="apple"&gt;Apple&lt;/option&gt; &lt;option value="banana"&gt;Banana&lt;/option&gt; &lt;/select&gt; &lt;/form&gt;
+                <br>
+                <form>
+                    <select>
+                        <option value=""></option>
+                        <option value="apple">Apple</option>
+                        <option value="banana">Banana</option>
+                    </select>
+                </form>
+                <br>
+                - Use date input box to enter a date
+                <br>
+                - Use &lt;input&gt; tag to create a date input box
+                <br>
+                - Use type attribute to specify the type of date input box
+                <br>
+                - Use name attribute to specify the name of date input box
+                <br>
+                Ex: &lt;form&gt; &lt;input type="date" name="date"&gt; &lt;/form&gt;
+                <br>
+                <form>
+                    <input type="date" name="date">
+                </form>
+                <br>
+                - Use Fieldbox and Legend elements to group elements
+                <br>
+                - Use &lt;fieldset&gt; tag to create a fieldbox
+                <br>
+                - Use &lt;legend&gt; tag to create a legend for a fieldbox
+                <br>
+                Ex: &lt;form&gt; &lt;fieldset&gt; &lt;legend&gt;Legend&lt;/legend&gt; &lt;/fieldset&gt; &lt;/form&gt;
+                <br>
+                <form>
+                    <fieldset>
+                        <legend>Legend</legend>
+                        <form>
+                            <label for="name">Name</label>
+                            <input type="text" value="Name">
+                            <input type="submit" value="Submit">
+                        </form>
+                    </fieldset>
+                </form>
+                <br>
+            </article>
+        </section>
+        <section id="attribute">
+            <h2>HTML - ATTRIBUTES</h2>
+            - Attributes are used to provide additional information about an HTML element
+            <br>
+            - Attributes are specified in the opening tag of an HTML element
+            <br>
+            - Attributes are separated by an equal sign (=)
+            <br>
+            - Attributes have a name and a value
+            <br>
+            Ex: &lt;input type="text" value="Name"&gt;
+            <br>
+            - Common attributes include id, class, src, href, alt, title, width, height, rows, cols, name, value, for, required, checked, disabled, readonly, multiple, accept, pattern, min, max, step
+            <br>
+            Ex: &lt;input type="text" id="name" value="Name"&gt;
+        </section>
+        <section id="metaElements">
+            <h2>HTML - META ELEMENTS</h2>
+            - Use &lt;meta&gt; tag to provide metadata about an HTML document
+            <br>
+            - Use charset attribute to specify the character encoding for the document
+            <br>
+            - Use name attribute to specify the name of the metadata
+            <br>
+            - Use content attribute to specify the value of the metadata
+            <br>
+            Ex: &lt;meta charset="UTF-8"&gt;
+            <br>
+            - Common metadata include description, keywords, author, viewport
+            <br>
+            Ex: &lt;meta name="description" content="Free Web tutorials"&gt;
+            <br>
+            <meta name="description" content="Free Web tutorials">
+            <br>
+        </section>
+        <section id="escapeCharacters">
+            <h2>HTML - ESCAPE CHARACTERS</h2>
+            - Use & lt; to display a less than sign (&lt;)
+            <br>
+            - Use & gt; to display a greater than sign (&gt;)
+            <br>
+            - Use & nbsp; to display a non-breaking space
+            <br>
+        </section>
+        <section id="boldAnditalicElement">
+            <h2>HTML - BOLD AND ITALIC ELEMENTS</h2>
+            - Use &lt;b&gt; tag to create bold text
+            <br>
+            Ex: &lt;b&gt;Bold&lt;/b&gt;
+            <br>
+            - Use &lt;i&gt; tag to create italic text
+            <br>
+            Ex: &lt;b&gt;Bold&lt;/b&gt; &lt;i&gt;Italic&lt;/i&gt;
+            <br>
+            - Use &lt;strong&gt; tag to create strong text
+            <br>
+            Ex: &lt;strong&gt;Strong&lt;/strong&gt;
+            <br>
+            - Use &lt;em&gt; tag to create emphasized text
+            <br>
+            Ex: &lt;em&gt;Emphasized&lt;/em&gt;
+            <br>
+            <b>Bold</b> <i>Italic</i> <strong>Strong</strong> <em>em</em>
+        </section>
+        <section id="iframe">
+            <h2>HTML - IFRAME</h2>
+            - Use &lt;iframe&gt; tag to create an inline frame
+            <br>
+            - Use src attribute to specify the URL of the page to display in the frame
+            <br>
+            - Use width attribute to specify the width of the frame
+            <br>
+            - Use height attribute to specify the height of the frame
+            <br>
+            Ex: &lt;iframe src="https://www.google.com" width="100" height="100"&gt;&lt;/iframe&gt;
+            <br>
+            <iframe src="https://www.google.com" width="100" height="100"></iframe>
+        </section>
+        <section id="supAndsub">
+            <h2>HTML - SUP AND SUB ELEMENTS</h2>
+            - Use &lt;sup&gt; tag to create superscript text
+            <br>
+            Ex: X&lt;sup&gt;2&lt;/sup&gt;
+            <br>
+            - Use &lt;sub&gt; tag to create subscript text
+            <br>
+            Ex: H&lt;sub&gt;2&lt;/sub&gt;O
+            <br>
+            X<sup>2</sup>
+            <br>
+            H<sub>2</sub>O
+        </section>
+        <section id="titleAndaltAttribute">
+            <h2>HTML - TITLE AND ALT ATTRIBUTES</h2>
+            - Use title attribute to specify the title of an HTML element
+            <br>
+            Ex: &lt;img src="image.jpg" alt="Image" title="Title"&gt;
+            <br>
+            - Use alt attribute to specify an alternate text for an image
+            <br>
+            Ex: &lt;img src="image.jpg" alt="Image"&gt;
+            <br>
+            <img src="image.jpg" alt="Image" title="Title">
+        </section>
+        <section id="audioElement">
+            <h2>HTML - AUDIO ELEMENT</h2>
+            - Use &lt;audio&gt; tag to embed audio content in a document
+            <br>
+            - Use src attribute to specify the URL of the audio file
+            <br>
+            - Use controls attribute to display audio controls
+            <br>
+            Ex: &lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt;
+            <br>
+            <audio src="audio.mp3" controls></audio>
+            <br>
+            - Use autoplay attribute to automatically start playing the audio
+            <br>
+            Ex: &lt;audio src="audio.mp3" controls autoplay&gt;&lt;/audio&gt;
+            <br>
+            - Use loop attribute to automatically start playing the audio
+            <br>
+            Ex: &lt;audio src="audio.mp3" controls autoplay loop&gt;&lt;/audio&gt;
+            <br>
+        </section>
+        <section id="videoElement">
+            <h2>HTML - VIDEO ELEMENT</h2>
+            - Use &lt;video&gt; tag to embed video content in a document
+            <br>
+            - Use src attribute to specify the URL of the video file
+            <br>
+            - Use controls attribute to display video controls
+            <br>
+            Ex: &lt;video src="video.mp4" controls&gt;&lt;/video&gt;
+            <br>
+            <video src="video.mp4" controls></video>
+            <br>
+            - Use autoplay attribute to automatically start playing the video
+            <br>
+            Ex: &lt;video src="video.mp4" controls autoplay&gt;&lt;/video&gt;
+            <br>
+            - Use loop attribute to automatically start playing the video
+            <br>
+            Ex: &lt;video src="video.mp4" controls autoplay loop&gt;&lt;/video&gt;
+            <br>
+            - Use width attribute to specify the width of the video
+            <br>
+            - Use height attribute to specify the height of the video
+            <br>
+            Ex: &lt;video src="video.mp4" controls autoplay loop width="320" height="240"&gt;&lt;/video&gt;
+            <br>
+        </section>
+        <section id="doctype">
+            <h2>HTML - DOCTYPE</h2>
+            - Use &lt;!DOCTYPE&gt; declaration to specify the document type and version of HTML
+            <br>
+            Ex: &lt;!DOCTYPE html&gt;
+            <br>
+        </section>
+    </main>
+</body>
+</html>
